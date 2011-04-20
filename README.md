@@ -14,7 +14,9 @@ Porter's site via the link given above.
 Example
 -------
 
-  > var stemmer = require('./porter').stemmer
-  > stemmer('Smurftastic')
-  'Smurftast'
+```javascript  
+> var stemmer = require('./porter').stemmer
+> stemmer('Smurftastic')
+'Smurftast'
+```
 
