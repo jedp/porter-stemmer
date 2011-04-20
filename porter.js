@@ -186,8 +186,18 @@
     return w;
   }
 
+  // memoize at the module level
+  var memo = {};
+  var memoizingStemmer = function(w) {
+    if (!memo[w]) {
+      memo[w] = stemmer(w);
+    }
+    return memo[w];
+  }
+
   if (typeof exports != 'undefined' && exports != null) {
     exports.stemmer = stemmer;
+    exports.memoizingStemmer = memoizingStemmer;
   }
 
 })();
