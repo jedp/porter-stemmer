@@ -21,7 +21,6 @@ or git clone this repo.
 Example
 -------
 
-    #!javascript  
     > var stemmer = require('./porter').stemmer
     > stemmer('Smurftastic')
     'Smurftast'
