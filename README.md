@@ -11,12 +11,18 @@ This is merely a wrapping of the javascript port done by "Andargor" with
 subsequent revisions by Christopher McKenzie.  More information is available on
 Porter's site via the link given above.
 
+Installation
+------------
+
+`npm install porter-stemmer` 
+
+or git clone this repo.
+
 Example
 -------
 
-```javascript  
-> var stemmer = require('./porter').stemmer
-> stemmer('Smurftastic')
-'Smurftast'
-```
+    #!javascript  
+    > var stemmer = require('./porter').stemmer
+    > stemmer('Smurftastic')
+    'Smurftast'
 
