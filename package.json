@@ -1,8 +1,10 @@
 {"name": "porter-stemmer",
  "description": "Martin Porter's stemmer wrapped in CommonJS for use in node.js",
- "version": "0.9.0", 
+ "version": "0.9.1", 
 
- "authors": ["Jed Parsons <jed@jedparsons.com> (http://jedparsons.com)"],
+ "authors": ["Jed Parsons <jed@jedparsons.com> (http://jedparsons.com)",
+             "Christoper McKenzie <cmckenzie@iizuu.com> (http://qaa.ath.cx/porter_js_demo.html",
+             "'Andargor' (http://www.andargor.com)"],
 
  "repository":
     {"type": "git",
