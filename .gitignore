@@ -1,0 +1,18 @@
+# vim ancillary files
+*.un~
+*.swp
+*.swo
+
+# compiled python
+*.pyc
+
+# other stuff
+*.zip
+*.gz
+*.tar
+*.log
+.DS_Store?
+
+# locally installed node modules
+node_modules
+

@@ -16,5 +16,7 @@
 
  "main": "porter.js",
 
- "dependencies": { }
+ "dependencies": { 
+   "nodeunit": ""
+ }
 }
