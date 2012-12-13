@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jedp/porter-stemmer.png)](http://travis-ci.org/jedp/porter-stemmer)
 porter.js
 =========
 
@@ -35,9 +36,10 @@ Test Suite
 ----------
 
 I have included Dr Porter's sample input and output text in a test suite.
-To verify using [nodeunit](https://github.com/caolan/nodeunit):
 
-    node test
+To verify:
+
+    npm test
     
 
 

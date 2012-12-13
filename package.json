@@ -16,7 +16,11 @@
 
  "main": "porter.js",
 
- "dependencies": { 
-   "nodeunit": ""
+ "scripts": {
+   "test": "vows test/*_vows.js -spec"
+ },
+
+ "devDependencies": {
+   "vows": "0.7.0"
  }
 }
