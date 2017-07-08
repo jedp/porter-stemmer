@@ -187,7 +187,7 @@
   }
 
   // memoize at the module level
-  var memo = {};
+  var memo = Object.create(null);
   var memoizingStemmer = function(w) {
     if (!memo[w]) {
       memo[w] = stemmer(w);
