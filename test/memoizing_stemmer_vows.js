@@ -25,6 +25,14 @@ vows.describe('The memoizing stemmer')
         assert(results[0] === results[1]);
       }
     }
+  },
+  "passes Dr Porter's test": function() {
+    var vocabulary = fs.readFileSync('./input.txt').toString().trim().split('\n');
+    var expected = fs.readFileSync('./output.txt').toString().trim().split('\n');
+
+    for (var i=0; i<vocabulary.length; i++) {
+      assert(memoizingStemmer(vocabulary[i]) === expected[i]);
+    }
   }
 })
 

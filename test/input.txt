@@ -4355,6 +4355,7 @@ constrains
 constraint
 constring
 construction
+constructor
 construe
 consul
 consuls
