@@ -187,10 +187,14 @@
   }
 
   // memoize at the module level
-  var memo = {};
+  var memo = Object.create(null);
   var memoizingStemmer = function(w) {
     if (!memo[w]) {
       memo[w] = stemmer(w);
+      // the stemmed output should stem to itself, cache this too for a small performance boost
+      if (w !== memo[w]) {
+        memo[memo[w]] = memo[w];
+      }
     }
     return memo[w];
   }
